@@ -1,4 +1,4 @@
-# DMM WEBCAMPコンテンツ【課題3 Bookers2作成】
+# DMM WEBCAMPコンテンツ【課題3 Bookers2】
 
 DMM WEBCAMPの学習コンテンツ"アプリケーションを完成させよう2"の課題3です。
 
