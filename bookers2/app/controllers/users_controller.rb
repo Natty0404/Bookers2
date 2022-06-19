@@ -9,10 +9,11 @@ class UsersController < ApplicationController
   def create
     @book = Book.new(book_params)
     @book.user_id = current_user.id
+    @user = current_user
     if @book.save
       redirect_to book_path(@book.id)
     else
-      render :index
+      render template: "books/index"
     end
   end
 
@@ -25,6 +26,11 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    if @user == current_user
+      render "edit"
+    else
+      redirect_to user_path(@user.id)
+    end
   end
 
   def update
