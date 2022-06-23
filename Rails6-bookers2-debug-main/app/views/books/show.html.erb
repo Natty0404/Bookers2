@@ -39,6 +39,9 @@
           </tr>
         <% end %>
       </table>
+
+　　　<%= render 'book_comments/list', book: @book, book_comment: @book_comment %>
+      <%= render 'book_comments/form', book: @book, book_comment: @book_comment %>
     </div>
   </div>
 </div>
